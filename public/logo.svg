@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff8c00"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="48" height="48" rx="13" fill="url(#bg)"/>
+  <!-- Subtle inner glow ring -->
+  <rect width="48" height="48" rx="13" fill="none" stroke="url(#ring)" stroke-width="1.5"/>
+  <!-- Camera body -->
+  <rect x="7" y="15" width="22" height="17" rx="4" fill="white"/>
+  <!-- Camera lens notch on top-right of body -->
+  <!-- Camera viewfinder triangle -->
+  <path d="M31 19.5 L41 14.5 L41 33.5 L31 28.5 Z" fill="white" stroke="white" stroke-linejoin="round"/>
+  <!-- Lens circle on camera body -->
+  <circle cx="18" cy="23.5" r="4.5" fill="url(#bg)"/>
+  <circle cx="18" cy="23.5" r="2.2" fill="white"/>
+</svg>

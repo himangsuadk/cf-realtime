@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #080c18;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+  }
+
+  /* Text input field */
+  .input-field {
+    @apply bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white
+           placeholder-slate-500 transition-all duration-200;
+    outline: none;
+  }
+  .input-field:focus {
+    border-color: rgba(249, 115, 22, 0.6);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    @apply flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400
+           active:scale-95 text-white font-semibold rounded-xl px-6 py-3
+           transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+           disabled:active:scale-100;
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    @apply flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10
+           active:scale-95 text-slate-300 hover:text-white font-medium rounded-xl px-4 py-2.5
+           transition-all duration-200 border border-white/10;
+  }
+
+  /* Control bar icon button */
+  .ctrl-btn {
+    @apply relative flex items-center justify-center w-11 h-11 rounded-full
+           bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white
+           transition-all duration-150 active:scale-90;
+  }
+
+  .ctrl-btn-danger {
+    @apply bg-red-500/20 hover:bg-red-500/30 text-red-400 hover:text-red-300;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #d1d5db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+

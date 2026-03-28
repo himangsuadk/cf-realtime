@@ -1,0 +1,20 @@
+{
+  "short_name": "CloudMeet",
+  "name": "CloudMeet — Real-time video meetings",
+  "description": "Create and join video meeting rooms with HD video, screen sharing and live chat — powered by Cloudflare Calls.",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#7c3aed",
+  "background_color": "#0f0a1e",
+  "categories": ["productivity", "communication"],
+  "lang": "en"
+}

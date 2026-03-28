@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary -->
+    <title>CloudMeet</title>
+    <meta name="description" content="Create and join video meeting rooms with HD video, screen sharing and live chat — powered by Cloudflare Calls." />
+    <meta name="author" content="manalejandro" />
+    <meta name="theme-color" content="#7c3aed" />
+
+    <!-- Icons & PWA -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cf-realtime.manalejandro.com" />
+    <meta property="og:title" content="CloudMeet" />
+    <meta property="og:description" content="Create and join video meeting rooms with HD video, screen sharing and live chat — powered by Cloudflare Calls." />
+    <meta property="og:image" content="https://cf-realtime.manalejandro.com/logo.svg" />
+    <meta property="og:site_name" content="CloudMeet" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://cf-realtime.manalejandro.com" />
+    <meta name="twitter:title" content="CloudMeet" />
+    <meta name="twitter:description" content="Create and join video meeting rooms with HD video, screen sharing and live chat — powered by Cloudflare Calls." />
+    <meta name="twitter:image" content="https://cf-realtime.manalejandro.com/logo.svg" />
+
+    <!-- GitHub -->
+    <link rel="source" href="https://github.com/manalejandro/cf-realtime" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- WebRTC adapter normalizes cross-browser differences. Required for Firefox support. -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/8.1.2/adapter.min.js"
+      integrity="sha512-l40eBFtXx+ve5RryIELC3y6/OM6Nu89mLGQd7fg1C93tN6XrkC3supb+/YiD/Y+B8P37kdJjtG1MT1kOO2VzxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/Logo.tsx","./src/components/MeetingRoom.tsx","./src/components/VideoTile.tsx","./src/pages/LobbyPage.tsx","./src/pages/MeetingPage.tsx","./src/utils/api.ts","./src/utils/calls.ts","./src/utils/useRoom.ts","./workers/worker.ts"],"version":"5.9.3"}
